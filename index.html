@@ -6,11 +6,20 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	</head>
 	<body>
-		
+		<div id="box"></div>
 	</body>
 </html>
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/GameEngine.js"></script>
 <script type="text/javascript">
 	gameEngine.start()
+	var feiji=new Feiji("#box1")
+	feiji.start()
+	feiji.kaihuo()
+	setInterval(function(){
+	    new Diji('#box3').move()	
+	    new Diji1('#box3').move()
+	    new Diji2('#box3').move()
+	},3000)
+	
 </script>
